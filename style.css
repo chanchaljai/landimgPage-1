@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    }
+#top{
+    width: 100%;
+    height: 50%;
+    background-color: red;
+}
+#bottom{
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+    display: flex;
+}
+#bone{
+    width: 25%;
+    height: 100%;
+    background-color: green;
+}
+#btwo{
+    width: 25%;
+    height: 100%;
+    background-color: white;
+}
+#bthree{
+    width: 25%;
+    height: 100%;
+    background-color: black;
+}
+#bfour{     
+    width: 25%;
+    height: 100%;
+    background-color: yellow;
+}
