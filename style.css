@@ -19,6 +19,7 @@
   position: relative;
   width: 100%;
   min-height: inherit;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
 #text {
@@ -28,7 +29,6 @@
   bottom: 20%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 0 10vw;
   color: #fff;
 }
@@ -164,3 +164,53 @@
 /* top ke ander overlay me min-height inherit denge */
 /* bottom ke child ka min-height inherit denge */
 /* Ab @media se responsive kremge */
+
+@media (max-width: 500px) {
+  /* top part */
+  #overly #text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #overly #text h1 {
+    font-size: 8vw;
+  }
+  #overly #text #textRight {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #overly #text #textRight p {
+    width: initial;
+    margin-top: 20px;
+    text-align: left;
+  }
+  #overly #text #textRight #icon {
+    margin-top: 30px;
+  }
+  /* bottom part */
+  #bottom {
+    flex-direction: column;
+    min-height: 30vh;
+  }
+  #bone {
+    width: 100%;
+  }
+  #btwo {
+    width: 100%;
+  }
+  #bthree {
+    width: 100%;
+  }
+  #bthree #threetop {
+    min-height: 12vh;
+  }
+  #bthree #threebottom {
+    min-height: 18vh;
+  }
+  #bfour {
+    width: 100%;
+  }
+  #bfour .notify2{
+    margin-top: 30px;
+  }
+}
